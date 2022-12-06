@@ -18,12 +18,14 @@ class ChatMessage extends StatelessWidget {
           ),
         ),
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
               name,
               style: Theme.of(context).textTheme.subtitle1,
             ),
             Container(
+              margin: EdgeInsets.only(top: 5.0),
               child: Text(text),
             )
           ],
